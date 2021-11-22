@@ -22,7 +22,6 @@ const createFile = async(base) => {
     catch(err) {
         throw err;
     }
-    
 }
 
 const multiply = (base) => {
