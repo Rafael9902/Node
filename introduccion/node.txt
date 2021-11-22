@@ -1,0 +1,21 @@
+¿Qué es Node?
+Es el uso de JavaScript para su ejecución del lado del servidor,osea un backend
+Corre sobre el motor V8 de Google, volviendolo muy rápido
+
+Permite el uso de sockets para comunicación real cliente - servidor
+
+Manejo de archivos en FileSystem
+servidores locales y remotos
+conexión a base de datos
+creación de servicios REST 
+
+¿Por qué es tan popular?
+Las entradas y salidas no realizan bloqueos del servidor
+Es rápido y facil de configurar
+
+el npm es el ecosistema de librerias más grande del mundo
+
+Non Blocking I/O
+
+Paquete útil en desarrollo = nodemon, permite generar el servidor de node esperando cambios, 
+en caso de cambios se reinicia, es útil en producción
