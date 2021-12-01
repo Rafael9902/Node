@@ -6,10 +6,8 @@
 const { createFile } = require('./helpers/multiply');
 
 //no hacer asi, solo para entender el process
-// const [,, arg3="base=5" ] = process.argv; 
-// const [, base ] = arg3.split("=");
-
-console.log(base);
+ const [,, arg3="base=5" ] = process.argv; 
+ const [, base ] = arg3.split("=");
 
 createFile(base)
     .then(fileName => console.log(fileName, "Created"))
