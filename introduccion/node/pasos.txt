@@ -1,1 +1,1 @@
-1. crear archivo de dependencias = npm init
+1. crear archivo de dependencias = npm init 

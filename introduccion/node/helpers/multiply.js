@@ -1,16 +1,6 @@
 //import { writeFileSync } from "fs";
 const fs = require('fs')
 
-// const createFile = (base) => {
-//     return new Promise( (resolve, reject) => {
-//         const output = multiply(base);
-//         let fileName = `multiplication_table_${base}.txt`;
-
-//         fs.writeFileSync(fileName, output);
-//         resolve(fileName);
-//     })
-// }
-
 const createFile = async(base) => {
     try {
         const output = multiply(base);
