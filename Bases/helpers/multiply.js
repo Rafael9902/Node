@@ -11,7 +11,6 @@ const createFile = async (output = '', fileName = '') => {
     catch(err) {
         throw err
     }
-
 }
 
 const multiply = (base = 5) => {

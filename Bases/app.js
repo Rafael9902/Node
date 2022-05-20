@@ -1,7 +1,9 @@
 const { multiply } = require('./helpers/multiply');
+const argv = require('yargs').argv
 
 console.clear();
+ 
 
-multiply(6)
-    .then(file => console.log(file))
-    .catch(err => console.error(err))
+// multiply(base)
+//     .then(file => console.log(file))
+//     .catch(err => console.error(err))
