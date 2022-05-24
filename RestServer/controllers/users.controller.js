@@ -1,4 +1,5 @@
 const { response, request } = require('express');
+const User = require('../models/user');
 
 const getUsers = (req, res = response) => {
   res.json({
@@ -18,14 +19,14 @@ const postUsers = (req, res = response) => {
 const putUsers = (req = request, res = response) => {
     //segment params
     const { id } = req.params;
+    const user = new User(req.body);
 
     //quey params
     const queryParams = req.query;
 
     res.json({
         message: 'put',
-        id,
-        queryParams
+        user
     })
 }
 
