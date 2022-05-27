@@ -1,12 +1,12 @@
 import express from 'express';
+import dbConnection from './config/database';
 import { config } from './config/config';
 import userRouter from './routes/user.routes';
-import dbConnection from './config/database';
-
-dbConnection();
 
 const app = express();
 const { PORT } = config;
+
+dbConnection();
 
 app.use(express.json());
 

@@ -7,7 +7,7 @@ const getUsers = () => {
 
 const createUser = async(request: UserInterface) => {
     const user = new User(request);
-    user.save()
+    await user.save()
 
     return user;
 }
