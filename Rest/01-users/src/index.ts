@@ -1,5 +1,5 @@
 import express from 'express';
-import dbConnection from './config/database';
+import { dbConnection } from './config/database';
 import { config } from './config/config';
 import userRouter from './routes/user.routes';
 

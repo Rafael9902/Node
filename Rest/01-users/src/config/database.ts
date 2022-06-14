@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { config } from "./config";
 
-const dbConnection = async() => {
+export const dbConnection = async() => {
     try {
         await mongoose.connect(config.MONGO_DB_CNN!);
     
@@ -12,5 +12,3 @@ const dbConnection = async() => {
         throw new Error("Error initializing Data Base");
       }
 };
-
-export default dbConnection;
