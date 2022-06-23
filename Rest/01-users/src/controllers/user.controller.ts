@@ -6,7 +6,7 @@ const getUsers = (_req: Request, _res: Response) => {
 }
 
 const createUser = async(req: Request, res: Response) => {    
-    res.status(200).send(await userService.createUser(req.body));
+    return await userService.createUser(req, res);
 }
 
 export default { getUsers, createUser }
