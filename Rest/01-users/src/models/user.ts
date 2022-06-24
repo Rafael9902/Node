@@ -11,4 +11,10 @@ const userSchema = new Schema<UserInterface>({
     google: {type: Boolean, default: false}
 })
 
+userSchema.methods.toJSON = function() {
+    const { __v, password, ...user } = this.toObject();
+
+    return user
+}
+
 export default model<UserInterface>('User', userSchema);

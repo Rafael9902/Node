@@ -1,5 +1,5 @@
-import { Response, Request } from "express";
-import { validationResult } from "express-validator";
+import { Response } from "express";
+import { UserInterface } from "../interfaces/user.interface";
 import User from "../models/user";
 import { encrypt } from "../utils/encrypt";
 
@@ -8,14 +8,7 @@ const getUsers = () => {
     console.log("bien");
 }
 
-const createUser = async(request: Request, response: Response) => {
-    const errors = validationResult(request);
-    const { body } = request;
-
-    console.log(errors);
-
-    if(!errors.isEmpty()) return response.status(400).json(errors);
-
+const createUser = async(body: UserInterface, response: Response) => {
     const { email } = body;
     const user = new User(body);
     user.password = encrypt(body.password);
